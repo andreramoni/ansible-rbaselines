@@ -1,0 +1,7 @@
+---
+- name: Hosts localhost
+  lineinfile:
+    state: present
+    dest: /etc/hosts
+    regexp: '.*{{ ansible_hostname }}$'
+    line: "{{ facter_networking.dhcp }} {{ ansible_fqdn }} {{ ansible_hostname }}"
