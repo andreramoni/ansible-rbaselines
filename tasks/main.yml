@@ -1,2 +1,8 @@
 ---
 # tasks file for rbaselines
+- hosts: all
+  tasks:
+  - name: Custom profile
+    copy:
+      src: /tmp/orig
+      dest: /tmp/dst
