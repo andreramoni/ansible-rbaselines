@@ -1,0 +1,5 @@
+---
+- name: rbaselines
+  tasks:
+    - hosts_localhost
+

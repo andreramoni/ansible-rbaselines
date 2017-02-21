@@ -1,0 +1,5 @@
+---
+- name: Playbook pra role rbaselines
+  hosts: all
+  roles:
+    - rbaselines

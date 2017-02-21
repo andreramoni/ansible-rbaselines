@@ -1,5 +1,5 @@
 ---
-- name: Hosts localhost
+- name: hosts_localhost
   lineinfile:
     state: present
     dest: /etc/hosts
