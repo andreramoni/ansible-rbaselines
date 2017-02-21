@@ -1,0 +1,6 @@
+---
+- name: custom_profile
+  template:
+    src: custom_profile.sh.j2
+    dest: /etc/profile.d/custom_profile.sh
+    mode: 0755
