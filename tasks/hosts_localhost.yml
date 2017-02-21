@@ -4,4 +4,5 @@
     state: present
     dest: /etc/hosts
     regexp: '.*{{ ansible_hostname }}$'
-    line: "{{ facter_networking.dhcp }} {{ ansible_fqdn }} {{ ansible_hostname }}"
+    line: "{{ ansible_default_ipv4}} {{ ansible_fqdn }} {{ ansible_hostname }}"
+
