@@ -1,0 +1,15 @@
+---
+- name: packages_to_install
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - htop
+    - strace
+
+- name: packages_to_remove
+  package:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - postfix
