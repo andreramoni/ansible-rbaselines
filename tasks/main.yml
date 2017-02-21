@@ -2,3 +2,4 @@
 - include: hosts_localhost.yml
 - include: custom_profile.yml
 - include: inputrc.yml
+- include: basic_packages.yml

@@ -1,0 +1,4 @@
+---
+- name: inputrc
+  action: augeas commands="set /files/etc/inputrc/show-all-if-ambiguous on
+                           set /files/etc/inputrc/completion-ignore-case on"
